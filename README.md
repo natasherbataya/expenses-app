@@ -1,1 +1,1 @@
-# expenses-app
+https://natasherbataya.github.io/expenses-app/
