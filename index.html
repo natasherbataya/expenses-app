@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses App</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h1>Учет расходов</h1> -->
+    <div class="expenses">
+      <div class="expenses__input">
+        <div class="expenses__input-inner rub">
+          <input class="js-input input" type="number" min="1" />
+        </div>
+        <!-- <select class="js-select__category select__category">
+          <option hidden disabled selected value="Категория">Категория</option>
+          <option value="Продукты">Продукты</option>
+          <option value="Транспорт">Транспорт</option>
+          <option value="Кафе и рестораны">Кафе и рестораны</option>
+          <option value="Аптека">Аптека</option>
+        </select> -->
+      </div>
+
+      <button class="js-add-button add__btn">Добавить</button>
+      <div class="stats">
+        <div class="stats__limit">
+          <span class="label">Лимит:</span>
+          <span class="js-limit rub"></span>
+          <button class="js-popup_btn-open popup_btn-open"></button>
+        </div>
+        <div class="stats__sum">
+          <span class="label">Сумма: </span>
+          <span class="js-sum rub"></span>
+        </div>
+        <div class="stats__status">
+          <span class="label">Статус:</span>
+          <span class="js-status status"></span>
+        </div>
+      </div>
+
+      <h2>История</h2>
+      <div class="js-history"></div>
+    </div>
+    <button class="js-clear-button clear__button">Сбросить расходы</button>
+
+    <div class="js-popup popup">
+      <div class="js-popup__content popup__content">
+        <button class="js-popup__btn-close popup__btn-close"></button>
+        <p class="popup__title">Новый лимит</p>
+        <form class="popup__input-wrapper">
+          <div class="popup__input-inner rub">
+            <input
+              class="js-popup__input-limit popup__input-limit"
+              type="number"
+              placeholder="Введите лимит"
+            />
+          </div>
+
+          <button class="js-popup__btn-add-limit popup__btn-add-limit">
+            Задать лимит
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
