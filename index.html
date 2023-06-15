@@ -16,23 +16,27 @@
     />
   </head>
   <body>
-    <!-- <h1>Учет расходов</h1> -->
+    <h1>Учет расходов</h1>
     <div class="expenses">
       <div class="expenses__input">
         <div class="expenses__input-inner rub">
           <input class="js-input input" type="number" min="1" />
         </div>
-        <!-- <select class="js-select__category select__category">
+        <select class="js-select__category select__category">
           <option hidden disabled selected value="Категория">Категория</option>
           <option value="Продукты">Продукты</option>
           <option value="Транспорт">Транспорт</option>
           <option value="Кафе и рестораны">Кафе и рестораны</option>
           <option value="Аптека">Аптека</option>
-        </select> -->
+        </select>
+        <output class="js-output__message output"></output>
       </div>
 
       <button class="js-add-button add__btn">Добавить</button>
-      <div class="stats">
+    </div>
+
+    <div class="stats">
+      <div class="stats__wrapper">
         <div class="stats__limit">
           <span class="label">Лимит:</span>
           <span class="js-limit rub"></span>
@@ -47,29 +51,36 @@
           <span class="js-status status"></span>
         </div>
       </div>
-
-      <h2>История</h2>
-      <div class="js-history"></div>
+      <div class="history__wrapper">
+        <h2>История</h2>
+        <div>
+          <ol class="js-history__list history__list"></ol>
+        </div>
+      </div>
     </div>
+
     <button class="js-clear-button clear__button">Сбросить расходы</button>
 
     <div class="js-popup popup">
       <div class="js-popup__content popup__content">
         <button class="js-popup__btn-close popup__btn-close"></button>
         <p class="popup__title">Новый лимит</p>
-        <form class="popup__input-wrapper">
-          <div class="popup__input-inner rub">
-            <input
-              class="js-popup__input-limit popup__input-limit"
-              type="number"
-              placeholder="Введите лимит"
-            />
-          </div>
+        <div class="popup__input-wrapper">
+          <form>
+            <div class="popup__input-inner rub">
+              <input
+                class="js-popup__input-limit popup__input-limit"
+                type="number"
+                placeholder="Введите лимит"
+              />
+            </div>
+            <div class="js-output"></div>
+          </form>
 
           <button class="js-popup__btn-add-limit popup__btn-add-limit">
             Задать лимит
           </button>
-        </form>
+        </div>
       </div>
     </div>
 

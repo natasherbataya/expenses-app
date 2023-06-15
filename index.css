@@ -22,7 +22,8 @@ button:hover {
   opacity: 0.5;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: 700;
 }
 
@@ -40,13 +41,10 @@ ol {
 }
 
 .expenses {
-  margin-top: 41px;
+  margin: 41px 0 65px;
   width: 1000px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 28px;
-  row-gap: 43px;
+  gap: 28px;
 }
 
 .expenses__input {
@@ -75,6 +73,28 @@ ol {
   padding: 10px 110px;
   color: #ffffff;
   background: #0094ff;
+}
+
+.stats {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.stats__limit {
+  margin-bottom: 13px;
+}
+
+.stats__sum {
+  margin-bottom: 35px;
+}
+
+.history__wrapper {
+  width: 550px;
+}
+
+.stats__wrapper {
+  width: 484px;
 }
 
 .status {
@@ -201,4 +221,9 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 58px;
   background: #0094ff;
   color: #fff;
+}
+
+.output {
+  font-size: 20px;
+  color: #ff0000;
 }
