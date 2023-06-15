@@ -1,4 +1,4 @@
-let LIMIT = 0;
+let LIMIT = 10000;
 const CURRENCY = "руб.";
 const STATUS_IN_LIMIT = "все хорошо";
 const STATUS_OUT_OF_LIMIT = "все плохо";
